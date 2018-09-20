@@ -1,0 +1,87 @@
+.anime-container {
+    width: 640px;
+    height: 480px;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    display: none;
+}
+
+.tokyo-ghoul {
+    background-image: url(./TG.jpg);
+}
+
+.aot {
+    background-image: url(./aot.jpg);
+}
+
+.one-piece {
+    background-image: url(./one-piece.jpg);
+}
+
+.pokemon {
+    background-image: url(./pokemon.jpg);
+}
+
+
+.overlay-anime {
+    height: 100%;
+    color: #ebebeb;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(59,59,59,0.5970763305322129) 24%, rgba(0,0,0,0) 100%);
+    position: relative;
+}
+
+.next-button, .prev-button {
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    padding: 10px;
+    border-radius: 0 4px 4px 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: all ease 500ms;
+    
+}
+
+.next-button {
+    right: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+.next-button:hover, .prev-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.overlay-anime .text-anime {
+    cursor: pointer;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 16px;
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    border: 1px solid #ebebeb;
+    border-radius: 4px 4px 4px 4px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.overlay-anime .text-anime:hover {
+    background-color: rgb(7, 7, 7);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
