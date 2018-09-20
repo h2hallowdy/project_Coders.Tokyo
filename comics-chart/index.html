@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+</head>
+
+<body>
+    <div class="chart-selector">
+        <a href="#" class="chart-name" onclick="currentChart(1)">Top Manga</a>
+        <a href="#" class="chart-name" onclick="currentChart(2)">Top Anime</a>
+        <a href="#" class="chart-name" onclick="currentChart(3)">Top tìm kiếm</a>
+    </div>
+    <!-- Manga chart -->
+    <div class="chart-container">
+        <div class="chart-manga">
+            <span class="number pos-1">01</span>
+            <a href="#"><img src="./a-nhan_resize.jpg" /></a>
+            <div class="info">
+                <span><a href="#">Ajin- Á nhân</a></span>
+                <span><a href="#">Chapter 70</a> &emsp;<i class="zmdi zmdi-eye"></i>1.123.456</span>
+            </div>
+        </div>
+        <hr>
+
+        <div class="chart-manga">
+            <span class="number pos-2">02</span>
+            <a href="#"><img src="./a-nhan_resize.jpg" /></a>
+            <div class="info">
+                <span><a href="#">Ajin- Á nhân</a></span>
+                <span><a href="#">Chapter 70</a> &emsp;<i class="zmdi zmdi-eye"></i>1.123.456</span>
+            </div>
+        </div>
+        <hr>
+
+        <div class="chart-manga">
+            <span class="number pos-3">03</span>
+            <a href="#"><img src="./a-nhan_resize.jpg" /></a>
+            <div class="info">
+                <span><a href="#">Ajin- Á nhân</a></span>
+                <span><a href="#">Chapter 70</a> &emsp;<i class="zmdi zmdi-eye"></i>1.123.456</span>
+            </div>
+        </div>
+        <hr>
+
+    </div>
+    <!-- Chart anime -->
+     <div class="chart-container">
+        <div class="chart-manga">
+            <span class="number pos-1">01</span>
+            <a href="#"><img src="./lessa-2_resize.jpg" /></a>
+            <div class="info">
+                <span><a href="#">Lessa 2: THE CRIMSON KNIGHT</a></span>
+                <span><a href="#">Chapter 70</a> &emsp;<i class="zmdi zmdi-eye"></i>1.123.456</span>
+            </div>
+        </div>
+        <hr>
+
+        <div class="chart-manga">
+            <span class="number pos-2">02</span>
+            <a href="#"><img src="./lessa-2_resize.jpg" /></a>
+            <div class="info">
+                <span><a href="#">Lessa 2: THE CRIMSON KNIGHT</a></span>
+                <span><a href="#">Chapter 70</a> &emsp;<i class="zmdi zmdi-eye"></i>1.123.456</span>
+            </div>
+        </div>
+        <hr>
+
+        <div class="chart-manga">
+            <span class="number pos-3">03</span>
+            <a href="#"><img src="./lessa-2_resize.jpg" /></a>
+            <div class="info">
+                <span><a href="#">Lessa 2: THE CRIMSON KNIGHT</a></span>
+                <span><a href="#">Chapter 70</a> &emsp;<i class="zmdi zmdi-eye"></i>1.123.456</span>
+            </div>
+        </div>
+        <hr>
+
+    </div>
+
+
+    <script>
+        var chartIndex = 1;
+        chartShow(chartIndex);
+        function currentChart(n) {
+            chartShow(chartIndex = n);
+        }
+        function chartShow(n) {
+            var charts = document.getElementsByClassName("chart-container");
+            var btn = document.getElementsByClassName("chart-name");
+            var i;
+            for (i = 0; i < charts.length; i++) {
+                charts[i].style.display = "none";
+            }
+            for (i = 0; i < charts.length; i++) {
+                btn[i].className = btn[i].className.replace(" active", "");
+            }
+            charts[chartIndex - 1].style.display = "block";
+            btn[chartIndex - 1].className += " active";
+        }
+
+    </script>
+
+</body>
+
+</html>
