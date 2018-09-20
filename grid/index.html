@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8"></div>
+        <div class="col-md-4">
+            <div class="chart-selector">
+        <a href="#" class="chart-name" onclick="currentChart(1)">Top Manga</a>
+        <a href="#" class="chart-name" onclick="currentChart(2)">Top Anime</a>
+        <a href="#" class="chart-name" onclick="currentChart(3)">Trend</a>
+    </div>
+    <!-- Manga chart -->
+    <div class="chart-container">
+        <div class="chart-manga">
+            <span class="number pos-1">01</span>
+            <a href="#"><img src="./a-nhan_resize.jpg" /></a>
+            <div class="info">
+                <span><a href="#">Ajin- Á nhân</a></span>
+                <span><a href="#">Chapter 70</a> &emsp;<i class="zmdi zmdi-eye"></i>1.123.456</span>
+            </div>
+        </div>
+        <hr>
+
+        <div class="chart-manga">
+            <span class="number pos-2">02</span>
+            <a href="#"><img src="./a-nhan_resize.jpg" /></a>
+            <div class="info">
+                <span><a href="#">Ajin- Á nhân</a></span>
+                <span><a href="#">Chapter 70</a> &emsp;<i class="zmdi zmdi-eye"></i>1.123.456</span>
+            </div>
+        </div>
+        <hr>
+
+        <div class="chart-manga">
+            <span class="number pos-3">03</span>
+            <a href="#"><img src="./a-nhan_resize.jpg" /></a>
+            <div class="info">
+                <span><a href="#">Ajin- Á nhân</a></span>
+                <span><a href="#">Chapter 70</a> &emsp;<i class="zmdi zmdi-eye"></i>1.123.456</span>
+            </div>
+        </div>
+        <hr>
+
+    </div>
+    <!-- Chart anime -->
+     <div class="chart-container">
+        <div class="chart-manga">
+            <span class="number pos-1">01</span>
+            <a href="#"><img src="./lessa-2_resize.jpg" /></a>
+            <div class="info">
+                <span><a href="#">Lessa 2: THE CRIMSON KNIGHT</a></span>
+                <span><a href="#">Chapter 70</a> &emsp;<i class="zmdi zmdi-eye"></i>1.123.456</span>
+            </div>
+        </div>
+        <hr>
+
+        <div class="chart-manga">
+            <span class="number pos-2">02</span>
+            <a href="#"><img src="./lessa-2_resize.jpg" /></a>
+            <div class="info">
+                <span><a href="#">Lessa 2: THE CRIMSON KNIGHT</a></span>
+                <span><a href="#">Chapter 70</a> &emsp;<i class="zmdi zmdi-eye"></i>1.123.456</span>
+            </div>
+        </div>
+        <hr>
+
+        <div class="chart-manga">
+            <span class="number pos-3">03</span>
+            <a href="#"><img src="./lessa-2_resize.jpg" /></a>
+            <div class="info">
+                <span><a href="#">Lessa 2: THE CRIMSON KNIGHT</a></span>
+                <span><a href="#">Chapter 70</a> &emsp;<i class="zmdi zmdi-eye"></i>1.123.456</span>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+     <div class="chart-container">
+        <div class="chart-manga">
+            <span class="number pos-1">01</span>
+            <a href="#"><img src="./a-nhan_resize.jpg" /></a>
+            <div class="info">
+                <span><a href="#">Ajin- Á nhân</a></span>
+                <span><a href="#">Chapter 70</a> &emsp;<i class="zmdi zmdi-eye"></i>1.123.456</span>
+            </div>
+        </div>
+        <hr>
+
+        <div class="chart-manga">
+            <span class="number pos-2">02</span>
+            <a href="#"><img src="./a-nhan_resize.jpg" /></a>
+            <div class="info">
+                <span><a href="#">Ajin- Á nhân</a></span>
+                <span><a href="#">Chapter 70</a> &emsp;<i class="zmdi zmdi-eye"></i>1.123.456</span>
+            </div>
+        </div>
+        <hr>
+
+        <div class="chart-manga">
+            <span class="number pos-3">03</span>
+            <a href="#"><img src="./a-nhan_resize.jpg" /></a>
+            <div class="info">
+                <span><a href="#">Ajin- Á nhân</a></span>
+                <span><a href="#">Chapter 70</a> &emsp;<i class="zmdi zmdi-eye"></i>1.123.456</span>
+            </div>
+        </div>
+        <hr>
+
+    </div>
+        </div>
+      </div>    
+    </div>
+     <script>
+        var chartIndex = 1;
+        chartShow(chartIndex);
+        function currentChart(n) {
+            chartShow(chartIndex = n);
+        }
+        function chartShow(n) {
+            var charts = document.getElementsByClassName("chart-container");
+            var btn = document.getElementsByClassName("chart-name");
+            var i;
+            for (i = 0; i < charts.length; i++) {
+                charts[i].style.display = "none";
+            }
+            for (i = 0; i < charts.length; i++) {
+                btn[i].className = btn[i].className.replace(" active", "");
+            }
+            charts[chartIndex - 1].style.display = "block";
+            btn[chartIndex - 1].className += " active";
+        }
+
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
