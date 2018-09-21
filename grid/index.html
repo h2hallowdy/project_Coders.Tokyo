@@ -9,55 +9,50 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="style-menu-bar.css">
-    <link rel="stylesheet" type="text/css" href="style-control-bar.css">
-    <link rel="stylesheet" type="text/css" href="style-anime-cover.css">
-    <link rel="stylesheet" type="text/css" href="style-hot-comics.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/style-menu-bar.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/style-control-bar.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/style-anime-cover.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/style-hot-comics.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/style-item.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/style-credit.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-    <title>Hello, world!</title>
+    <title>H-Comics</title>
 </head>
 
 <body>
+    <!-- main bar -->
+    <div class="main-bar">
+        <div class="site-name">
+            <span class="main-title">H-Comics</span>
+            <span class="subtitle">Comics bring us together</span>
+        </div>
+        <div class="search">
+            <input type="text" id="search" placeholder="search...">
+
+            <a class="search-icon" href="#"><i class="zmdi zmdi-search zmdi-hc-2x"></i></a>
+        </div>
+        <div class="login">
+            <span><a href="#">Đăng ký </a>/<a href="login.html"> Đăng nhập</a></span>
+        </div>
+    </div>
+    <!-- control bar -->
+    <div class="d-flex flex-direction-row justify-content-center control-bar-container mb-4">
+
+        <a class="home active-control" href="#">HOME</a>
+        <a class="hot" href="#">HOT</a>
+        <a class="category" href="#">THỂ LOẠI</a>
+        <a class="filter" href="#">XẾP HẠNG</a>
+        <a class="folow" href="#">THEO DÕI</a>
+        <a class="anime" href="#">ANIME</a>
+        <a class="contact" href="#">LIÊN HỆ</a>
+        <a class="mes" href="#">GÓP Ý</a>
+    </div>
+
     <div class="container">
-        <!-- Main site name -->
-        <div class="row mb-0">
-            <div class="col-md">
-                <div class="main-bar">
-                    <div class="site-name">
-                        <span class="main-title">H-Comics</span>
-                        <span class="subtitle">Comics bring us together</span>
-                    </div>
-                    <div class="search">
-                        <input type="text" id="search" placeholder="search...">
 
-                        <a class="search-icon" href="#"><i class="zmdi zmdi-search zmdi-hc-2x"></i></a>
-                    </div>
-                    <div class="login">
-                        <span><a href="#">Đăng ký </a>/<a href="#"> Đăng nhập</a></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Main control bar -->
-        <div class="row mb-3">
-            <div class="col-md-12">
-                <div class="d-flex flex-direction-row justify-content-center control-bar-container">
-
-                    <a class="home active-control" href="#">HOME</a>
-                    <a class="hot" href="#">HOT</a>
-                    <a class="category" href="#">THỂ LOẠI</a>
-                    <a class="filter" href="#">XẾP HẠNG</a>
-                    <a class="folow" href="#">THEO DÕI</a>
-                    <a class="anime" href="#">ANIME</a>
-                    <a class="contact" href="#">LIÊN HỆ</a>
-                    <a class="mes" href="#">GÓP Ý</a>
-                </div>
-            </div>
-        </div>
-        <hr>
         <!-- Anime hot -->
         <div class="row">
             <div class="col-md-12 my-blue">
@@ -239,10 +234,792 @@
                 </div>
             </div>
         </div>
-        
+        <hr>
         <!-- chart and comics-->
         <div class="row">
-            <div class="col-md-8"></div>
+            <div class="col-md-12 my-blue">
+                DANH SÁCH TRUYỆN >
+                <hr>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <!-- COMICS -->
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="comic-image">
+                                <a href="#" title="Eden's Zero">
+                                    <img src="./CSS/images/edens-zero.jpg" alt="Eden's Zero" title="Eden's Zero" />
+                                </a>
+                                <div class="comic-info">
+                                    <span>
+                                        <i class="fa fa-eye"></i>
+                                        164.870
+                                        <i class="fa fa-comment"></i>
+                                        755
+                                        <i class="fa fa-heart"></i>
+                                        3.425
+                                    </span>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#" title="Eden's Zero">Eden's Zero</a>
+                                </h3>
+                                <ul>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 12</a>
+                                        <i class="time">5 giờ trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 11</a>
+                                        <i class="time">3 ngày trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 10</a>
+                                        <i class="time">1 tuần trước</i>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="comic-image">
+                                <a href="#" title="Eden's Zero">
+                                    <img src="./CSS/images/edens-zero.jpg" alt="Eden's Zero" title="Eden's Zero" />
+                                </a>
+                                <div class="comic-info">
+                                    <span>
+                                        <i class="fa fa-eye"></i>
+                                        164.870
+                                        <i class="fa fa-comment"></i>
+                                        755
+                                        <i class="fa fa-heart"></i>
+                                        3.425
+                                    </span>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#" title="Eden's Zero">Eden's Zero</a>
+                                </h3>
+                                <ul>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 12</a>
+                                        <i class="time">5 giờ trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 11</a>
+                                        <i class="time">3 ngày trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 10</a>
+                                        <i class="time">1 tuần trước</i>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="comic-image">
+                                <a href="#" title="Eden's Zero">
+                                    <img src="./CSS/images/edens-zero.jpg" alt="Eden's Zero" title="Eden's Zero" />
+                                </a>
+                                <div class="comic-info">
+                                    <span>
+                                        <i class="fa fa-eye"></i>
+                                        164.870
+                                        <i class="fa fa-comment"></i>
+                                        755
+                                        <i class="fa fa-heart"></i>
+                                        3.425
+                                    </span>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#" title="Eden's Zero">Eden's Zero</a>
+                                </h3>
+                                <ul>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 12</a>
+                                        <i class="time">5 giờ trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 11</a>
+                                        <i class="time">3 ngày trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 10</a>
+                                        <i class="time">1 tuần trước</i>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="comic-image">
+                                <a href="#" title="Eden's Zero">
+                                    <img src="./CSS/images/edens-zero.jpg" alt="Eden's Zero" title="Eden's Zero" />
+                                </a>
+                                <div class="comic-info">
+                                    <span>
+                                        <i class="fa fa-eye"></i>
+                                        164.870
+                                        <i class="fa fa-comment"></i>
+                                        755
+                                        <i class="fa fa-heart"></i>
+                                        3.425
+                                    </span>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#" title="Eden's Zero">Eden's Zero</a>
+                                </h3>
+                                <ul>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 12</a>
+                                        <i class="time">5 giờ trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 11</a>
+                                        <i class="time">3 ngày trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 10</a>
+                                        <i class="time">1 tuần trước</i>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="comic-image">
+                                <a href="#" title="Eden's Zero">
+                                    <img src="./CSS/images/edens-zero.jpg" alt="Eden's Zero" title="Eden's Zero" />
+                                </a>
+                                <div class="comic-info">
+                                    <span>
+                                        <i class="fa fa-eye"></i>
+                                        164.870
+                                        <i class="fa fa-comment"></i>
+                                        755
+                                        <i class="fa fa-heart"></i>
+                                        3.425
+                                    </span>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#" title="Eden's Zero">Eden's Zero</a>
+                                </h3>
+                                <ul>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 12</a>
+                                        <i class="time">5 giờ trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 11</a>
+                                        <i class="time">3 ngày trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 10</a>
+                                        <i class="time">1 tuần trước</i>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="comic-image">
+                                <a href="#" title="Eden's Zero">
+                                    <img src="./CSS/images/edens-zero.jpg" alt="Eden's Zero" title="Eden's Zero" />
+                                </a>
+                                <div class="comic-info">
+                                    <span>
+                                        <i class="fa fa-eye"></i>
+                                        164.870
+                                        <i class="fa fa-comment"></i>
+                                        755
+                                        <i class="fa fa-heart"></i>
+                                        3.425
+                                    </span>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#" title="Eden's Zero">Eden's Zero</a>
+                                </h3>
+                                <ul>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 12</a>
+                                        <i class="time">5 giờ trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 11</a>
+                                        <i class="time">3 ngày trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 10</a>
+                                        <i class="time">1 tuần trước</i>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="comic-image">
+                                <a href="#" title="Eden's Zero">
+                                    <img src="./CSS/images/edens-zero.jpg" alt="Eden's Zero" title="Eden's Zero" />
+                                </a>
+                                <div class="comic-info">
+                                    <span>
+                                        <i class="fa fa-eye"></i>
+                                        164.870
+                                        <i class="fa fa-comment"></i>
+                                        755
+                                        <i class="fa fa-heart"></i>
+                                        3.425
+                                    </span>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#" title="Eden's Zero">Eden's Zero</a>
+                                </h3>
+                                <ul>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 12</a>
+                                        <i class="time">5 giờ trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 11</a>
+                                        <i class="time">3 ngày trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 10</a>
+                                        <i class="time">1 tuần trước</i>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="comic-image">
+                                <a href="#" title="Eden's Zero">
+                                    <img src="./CSS/images/edens-zero.jpg" alt="Eden's Zero" title="Eden's Zero" />
+                                </a>
+                                <div class="comic-info">
+                                    <span>
+                                        <i class="fa fa-eye"></i>
+                                        164.870
+                                        <i class="fa fa-comment"></i>
+                                        755
+                                        <i class="fa fa-heart"></i>
+                                        3.425
+                                    </span>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#" title="Eden's Zero">Eden's Zero</a>
+                                </h3>
+                                <ul>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 12</a>
+                                        <i class="time">5 giờ trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 11</a>
+                                        <i class="time">3 ngày trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 10</a>
+                                        <i class="time">1 tuần trước</i>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="comic-image">
+                                <a href="#" title="Eden's Zero">
+                                    <img src="./CSS/images/edens-zero.jpg" alt="Eden's Zero" title="Eden's Zero" />
+                                </a>
+                                <div class="comic-info">
+                                    <span>
+                                        <i class="fa fa-eye"></i>
+                                        164.870
+                                        <i class="fa fa-comment"></i>
+                                        755
+                                        <i class="fa fa-heart"></i>
+                                        3.425
+                                    </span>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#" title="Eden's Zero">Eden's Zero</a>
+                                </h3>
+                                <ul>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 12</a>
+                                        <i class="time">5 giờ trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 11</a>
+                                        <i class="time">3 ngày trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 10</a>
+                                        <i class="time">1 tuần trước</i>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="comic-image">
+                                <a href="#" title="Eden's Zero">
+                                    <img src="./CSS/images/edens-zero.jpg" alt="Eden's Zero" title="Eden's Zero" />
+                                </a>
+                                <div class="comic-info">
+                                    <span>
+                                        <i class="fa fa-eye"></i>
+                                        164.870
+                                        <i class="fa fa-comment"></i>
+                                        755
+                                        <i class="fa fa-heart"></i>
+                                        3.425
+                                    </span>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#" title="Eden's Zero">Eden's Zero</a>
+                                </h3>
+                                <ul>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 12</a>
+                                        <i class="time">5 giờ trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 11</a>
+                                        <i class="time">3 ngày trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 10</a>
+                                        <i class="time">1 tuần trước</i>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="comic-image">
+                                <a href="#" title="Eden's Zero">
+                                    <img src="./CSS/images/edens-zero.jpg" alt="Eden's Zero" title="Eden's Zero" />
+                                </a>
+                                <div class="comic-info">
+                                    <span>
+                                        <i class="fa fa-eye"></i>
+                                        164.870
+                                        <i class="fa fa-comment"></i>
+                                        755
+                                        <i class="fa fa-heart"></i>
+                                        3.425
+                                    </span>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#" title="Eden's Zero">Eden's Zero</a>
+                                </h3>
+                                <ul>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 12</a>
+                                        <i class="time">5 giờ trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 11</a>
+                                        <i class="time">3 ngày trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 10</a>
+                                        <i class="time">1 tuần trước</i>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="comic-image">
+                                <a href="#" title="Eden's Zero">
+                                    <img src="./CSS/images/edens-zero.jpg" alt="Eden's Zero" title="Eden's Zero" />
+                                </a>
+                                <div class="comic-info">
+                                    <span>
+                                        <i class="fa fa-eye"></i>
+                                        164.870
+                                        <i class="fa fa-comment"></i>
+                                        755
+                                        <i class="fa fa-heart"></i>
+                                        3.425
+                                    </span>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#" title="Eden's Zero">Eden's Zero</a>
+                                </h3>
+                                <ul>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 12</a>
+                                        <i class="time">5 giờ trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 11</a>
+                                        <i class="time">3 ngày trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 10</a>
+                                        <i class="time">1 tuần trước</i>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="comic-image">
+                                <a href="#" title="Eden's Zero">
+                                    <img src="./CSS/images/edens-zero.jpg" alt="Eden's Zero" title="Eden's Zero" />
+                                </a>
+                                <div class="comic-info">
+                                    <span>
+                                        <i class="fa fa-eye"></i>
+                                        164.870
+                                        <i class="fa fa-comment"></i>
+                                        755
+                                        <i class="fa fa-heart"></i>
+                                        3.425
+                                    </span>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#" title="Eden's Zero">Eden's Zero</a>
+                                </h3>
+                                <ul>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 12</a>
+                                        <i class="time">5 giờ trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 11</a>
+                                        <i class="time">3 ngày trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 10</a>
+                                        <i class="time">1 tuần trước</i>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="comic-image">
+                                <a href="#" title="Eden's Zero">
+                                    <img src="./CSS/images/edens-zero.jpg" alt="Eden's Zero" title="Eden's Zero" />
+                                </a>
+                                <div class="comic-info">
+                                    <span>
+                                        <i class="fa fa-eye"></i>
+                                        164.870
+                                        <i class="fa fa-comment"></i>
+                                        755
+                                        <i class="fa fa-heart"></i>
+                                        3.425
+                                    </span>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#" title="Eden's Zero">Eden's Zero</a>
+                                </h3>
+                                <ul>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 12</a>
+                                        <i class="time">5 giờ trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 11</a>
+                                        <i class="time">3 ngày trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 10</a>
+                                        <i class="time">1 tuần trước</i>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="comic-image">
+                                <a href="#" title="Eden's Zero">
+                                    <img src="./CSS/images/edens-zero.jpg" alt="Eden's Zero" title="Eden's Zero" />
+                                </a>
+                                <div class="comic-info">
+                                    <span>
+                                        <i class="fa fa-eye"></i>
+                                        164.870
+                                        <i class="fa fa-comment"></i>
+                                        755
+                                        <i class="fa fa-heart"></i>
+                                        3.425
+                                    </span>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#" title="Eden's Zero">Eden's Zero</a>
+                                </h3>
+                                <ul>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 12</a>
+                                        <i class="time">5 giờ trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 11</a>
+                                        <i class="time">3 ngày trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 10</a>
+                                        <i class="time">1 tuần trước</i>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="comic-image">
+                                <a href="#" title="Eden's Zero">
+                                    <img src="./CSS/images/edens-zero.jpg" alt="Eden's Zero" title="Eden's Zero" />
+                                </a>
+                                <div class="comic-info">
+                                    <span>
+                                        <i class="fa fa-eye"></i>
+                                        164.870
+                                        <i class="fa fa-comment"></i>
+                                        755
+                                        <i class="fa fa-heart"></i>
+                                        3.425
+                                    </span>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#" title="Eden's Zero">Eden's Zero</a>
+                                </h3>
+                                <ul>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 12</a>
+                                        <i class="time">5 giờ trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 11</a>
+                                        <i class="time">3 ngày trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 10</a>
+                                        <i class="time">1 tuần trước</i>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="comic-image">
+                                <a href="#" title="Eden's Zero">
+                                    <img src="./CSS/images/edens-zero.jpg" alt="Eden's Zero" title="Eden's Zero" />
+                                </a>
+                                <div class="comic-info">
+                                    <span>
+                                        <i class="fa fa-eye"></i>
+                                        164.870
+                                        <i class="fa fa-comment"></i>
+                                        755
+                                        <i class="fa fa-heart"></i>
+                                        3.425
+                                    </span>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#" title="Eden's Zero">Eden's Zero</a>
+                                </h3>
+                                <ul>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 12</a>
+                                        <i class="time">5 giờ trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 11</a>
+                                        <i class="time">3 ngày trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 10</a>
+                                        <i class="time">1 tuần trước</i>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="comic-image">
+                                <a href="#" title="Eden's Zero">
+                                    <img src="./CSS/images/edens-zero.jpg" alt="Eden's Zero" title="Eden's Zero" />
+                                </a>
+                                <div class="comic-info">
+                                    <span>
+                                        <i class="fa fa-eye"></i>
+                                        164.870
+                                        <i class="fa fa-comment"></i>
+                                        755
+                                        <i class="fa fa-heart"></i>
+                                        3.425
+                                    </span>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#" title="Eden's Zero">Eden's Zero</a>
+                                </h3>
+                                <ul>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 12</a>
+                                        <i class="time">5 giờ trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 11</a>
+                                        <i class="time">3 ngày trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 10</a>
+                                        <i class="time">1 tuần trước</i>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="comic-image">
+                                <a href="#" title="Eden's Zero">
+                                    <img src="./CSS/images/edens-zero.jpg" alt="Eden's Zero" title="Eden's Zero" />
+                                </a>
+                                <div class="comic-info">
+                                    <span>
+                                        <i class="fa fa-eye"></i>
+                                        164.870
+                                        <i class="fa fa-comment"></i>
+                                        755
+                                        <i class="fa fa-heart"></i>
+                                        3.425
+                                    </span>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#" title="Eden's Zero">Eden's Zero</a>
+                                </h3>
+                                <ul>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 12</a>
+                                        <i class="time">5 giờ trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 11</a>
+                                        <i class="time">3 ngày trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 10</a>
+                                        <i class="time">1 tuần trước</i>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="comic-image">
+                                <a href="#" title="Eden's Zero">
+                                    <img src="./CSS/images/edens-zero.jpg" alt="Eden's Zero" title="Eden's Zero" />
+                                </a>
+                                <div class="comic-info">
+                                    <span>
+                                        <i class="fa fa-eye"></i>
+                                        164.870
+                                        <i class="fa fa-comment"></i>
+                                        755
+                                        <i class="fa fa-heart"></i>
+                                        3.425
+                                    </span>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#" title="Eden's Zero">Eden's Zero</a>
+                                </h3>
+                                <ul>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 12</a>
+                                        <i class="time">5 giờ trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 11</a>
+                                        <i class="time">3 ngày trước</i>
+                                    </li>
+                                    <li class="chapter">
+                                        <a href="#">Chapter 10</a>
+                                        <i class="time">1 tuần trước</i>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CHARTS -->
             <div class="col-md-4">
                 <div class="chart-selector">
                     <a class="chart-name" onclick="currentChart(1)">Top Manga</a>
@@ -253,7 +1030,7 @@
                 <div class="chart-container">
                     <div class="chart-manga">
                         <span class="number pos-1">01</span>
-                        <a href="#"><img src="./a-nhan_resize.jpg" /></a>
+                        <a href="#"><img src="./CSS/images/a-nhan_resize.jpg" /></a>
                         <div class="info">
                             <span><a href="#">Ajin- Á nhân</a></span>
                             <span><a href="#">Chapter 70</a> &emsp;<i class="zmdi zmdi-eye"></i>1.123.456</span>
@@ -263,7 +1040,7 @@
 
                     <div class="chart-manga">
                         <span class="number pos-2">02</span>
-                        <a href="#"><img src="./a-nhan_resize.jpg" /></a>
+                        <a href="#"><img src="./CSS/images/a-nhan_resize.jpg" /></a>
                         <div class="info">
                             <span><a href="#">Ajin- Á nhân</a></span>
                             <span><a href="#">Chapter 70</a> &emsp;<i class="zmdi zmdi-eye"></i>1.123.456</span>
@@ -273,7 +1050,7 @@
 
                     <div class="chart-manga">
                         <span class="number pos-3">03</span>
-                        <a href="#"><img src="./a-nhan_resize.jpg" /></a>
+                        <a href="#"><img src="./CSS/images/a-nhan_resize.jpg" /></a>
                         <div class="info">
                             <span><a href="#">Ajin- Á nhân</a></span>
                             <span><a href="#">Chapter 70</a> &emsp;<i class="zmdi zmdi-eye"></i>1.123.456</span>
@@ -283,7 +1060,7 @@
 
                     <div class="chart-manga">
                         <span class="number pos-4">04</span>
-                        <a href="#"><img src="./a-nhan_resize.jpg" /></a>
+                        <a href="#"><img src="./CSS/images/a-nhan_resize.jpg" /></a>
                         <div class="info">
                             <span><a href="#">Ajin- Á nhân</a></span>
                             <span><a href="#">Chapter 70</a> &emsp;<i class="zmdi zmdi-eye"></i>1.123.456</span>
@@ -293,7 +1070,7 @@
 
                     <div class="chart-manga">
                         <span class="number pos-5">05</span>
-                        <a href="#"><img src="./a-nhan_resize.jpg" /></a>
+                        <a href="#"><img src="./CSS/images/a-nhan_resize.jpg" /></a>
                         <div class="info">
                             <span><a href="#">Ajin- Á nhân</a></span>
                             <span><a href="#">Chapter 70</a> &emsp;<i class="zmdi zmdi-eye"></i>1.123.456</span>
@@ -306,7 +1083,7 @@
                 <div class="chart-container">
                     <div class="chart-manga">
                         <span class="number pos-1">01</span>
-                        <a href="#"><img src="./lessa-2_resize.jpg" /></a>
+                        <a href="#"><img src="./CSS/images/lessa-2_resize.jpg" /></a>
                         <div class="info">
                             <span><a href="#">Lessa 2: THE CRIMSON KNIGHT</a></span>
                             <span><a href="#">Chapter 70</a> &emsp;<i class="zmdi zmdi-eye"></i>1.123.456</span>
@@ -316,7 +1093,7 @@
 
                     <div class="chart-manga">
                         <span class="number pos-2">02</span>
-                        <a href="#"><img src="./lessa-2_resize.jpg" /></a>
+                        <a href="#"><img src="./CSS/images/lessa-2_resize.jpg" /></a>
                         <div class="info">
                             <span><a href="#">Lessa 2: THE CRIMSON KNIGHT</a></span>
                             <span><a href="#">Chapter 70</a> &emsp;<i class="zmdi zmdi-eye"></i>1.123.456</span>
@@ -326,7 +1103,7 @@
 
                     <div class="chart-manga">
                         <span class="number pos-3">03</span>
-                        <a href="#"><img src="./lessa-2_resize.jpg" /></a>
+                        <a href="#"><img src="./CSS/images/lessa-2_resize.jpg" /></a>
                         <div class="info">
                             <span><a href="#">Lessa 2: THE CRIMSON KNIGHT</a></span>
                             <span><a href="#">Chapter 70</a> &emsp;<i class="zmdi zmdi-eye"></i>1.123.456</span>
@@ -338,7 +1115,7 @@
                 <div class="chart-container">
                     <div class="chart-manga">
                         <span class="number pos-1">01</span>
-                        <a href="#"><img src="./a-nhan_resize.jpg" /></a>
+                        <a href="#"><img src="./CSS/images/a-nhan_resize.jpg" /></a>
                         <div class="info">
                             <span><a href="#">Ajin- Á nhân</a></span>
                             <span><a href="#">Chapter 70</a> &emsp;<i class="zmdi zmdi-eye"></i>1.123.456</span>
@@ -348,7 +1125,7 @@
 
                     <div class="chart-manga">
                         <span class="number pos-2">02</span>
-                        <a href="#"><img src="./a-nhan_resize.jpg" /></a>
+                        <a href="#"><img src="./CSS/images/a-nhan_resize.jpg" /></a>
                         <div class="info">
                             <span><a href="#">Ajin- Á nhân</a></span>
                             <span><a href="#">Chapter 70</a> &emsp;<i class="zmdi zmdi-eye"></i>1.123.456</span>
@@ -358,7 +1135,7 @@
 
                     <div class="chart-manga">
                         <span class="number pos-3">03</span>
-                        <a href="#"><img src="./a-nhan_resize.jpg" /></a>
+                        <a href="#"><img src="./CSS/images/a-nhan_resize.jpg" /></a>
                         <div class="info">
                             <span><a href="#">Ajin- Á nhân</a></span>
                             <span><a href="#">Chapter 70</a> &emsp;<i class="zmdi zmdi-eye"></i>1.123.456</span>
@@ -369,6 +1146,58 @@
                 </div>
             </div>
         </div>
+        <!-- Position Nav -->
+        <div class="row">
+            <div class="col-md">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                        <li class="page-item"><a class="page-link" href="#">7</a></li>
+                        <li class="page-item"><a class="page-link" href="#">8</a></li>
+                        <li class="page-item"><a class="page-link" href="#">9</a></li>
+                        <li class="page-item"><a class="page-link" href="#">15</a></li>
+                        <li class="page-item"><a class="page-link" href="#">25</a></li>
+                        <li class="page-item"><a class="page-link" href="#">35</a></li>
+                        <li class="page-item"><a class="page-link" href="#">45</a></li>
+                        <li class="page-item"><a class="page-link" href="#">55</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="site-name-end">
+        <div class="title">
+            <span class="main-title">H-Comics</span>
+            <span class="subtitle">Comics bring us together</span>
+        </div>
+        <div class="credit-me">
+            <span>Project Name: H-Comics</span>
+            <span>Author: Me- Nguyen Xuan Hoang</span>
+            <span>Tutors: All members and teachers from <a href="https://coders.tokyo">coders.tokyo</a></span>
+        </div>
+
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <!-- credit -->
+    <div class="credit-container">
+        <span>Contact us via</span>
+        <a href="https://www.facebook.com/coders.tokyo/">
+            <img src="./CSS/images/facebook-logo-button.svg" title="Facbook">
+        </a>
+        <a href="#">
+            <img src="./CSS/images/instagram-logo.svg" title="Instagram">
+        </a>
+        <a href="#">
+            <img src="./CSS/images/twitter-logo-button.svg" title="Twitter">
+        </a>
     </div>
     <script>
         var chartIndex = 1;
@@ -417,6 +1246,24 @@
         }
     </script>
 
+    <script>
+        
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+    
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

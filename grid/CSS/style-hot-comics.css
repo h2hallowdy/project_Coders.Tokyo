@@ -2,7 +2,7 @@
 .hot-cover {
     grid-column: span 3;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(./TG-re.jpg);
+    background-image: url(./images/TG-re.jpg);
     background-size: cover;
     background-position: center;
     width: 200px;
@@ -14,7 +14,7 @@
 .test {
     grid-column: span 3;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(./hoc-vien-anh-hung.jpg);
+    background-image: url(./images/hoc-vien-anh-hung.jpg);
     background-size: cover;
     background-position: center;
     width: 200px;

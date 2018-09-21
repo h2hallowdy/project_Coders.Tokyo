@@ -28,3 +28,9 @@
     background: rgba(99, 162, 224, 0.644);
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
