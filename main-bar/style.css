@@ -1,0 +1,87 @@
+
+.main-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    height: 5rem;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+.main-bar .site-name, .search, .login {
+    flex-basis: 33.33%;
+    height: 100%;
+    text-align: center;
+}
+
+.site-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-name span {
+    text-shadow: .4px .4px 5px rgba(0, 0, 0, 0.2);
+    font-weight: 400;
+}
+.site-name .main-title {
+    font-family: 'Handlee', cursive;
+    font-size: 25px;
+    
+}
+.site-name .subtitle {
+    font-family: 'Catamaran', sans-serif;
+    font-style: italic;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input {
+    display: block;
+    margin: 0px auto;
+    border: none;
+    outline: none;
+    padding: 6px 4px;
+    width: 50%;
+    box-shadow: .4px .4px 5px rgba(0, 0, 0, 0.5);
+    
+}
+.search {
+    position: relative;
+}
+.search label {
+    position: absolute;
+    left: 25%;
+    top: 40%;
+    font-weight: 400;
+    font-size: 15px;
+    pointer-events: none;
+    color: rgba(128, 128, 128, 0.658);
+}
+
+.search .search-icon {
+    position: absolute;
+    top: 30%;
+    right: 15%;
+    text-decoration: none;
+    color: #000;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login a {
+    text-decoration: none;
+    color: #000;
+    text-shadow: .4px .4px .5px rgba(0, 0, 0, 0.3);
+}
+
